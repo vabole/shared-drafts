@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+<% include ../partials/nav.ejs %>
+
+<div class="container">
+<h2>Database Results</h2>
+
+<ul>
+    <% results.forEach(function(r) { %>
+        <li><%= r.id %> - <%= r._route %> <%= r._ip %><br><%= JSON.stringify(r._data) %> <br> <%= JSON.stringify(r._headers) %> <%= r._date %></li>
+    <% }); %>
+</ul>
+
+</div>
+
+</body>
+</html>
