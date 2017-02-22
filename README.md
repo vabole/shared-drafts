@@ -1,0 +1,1 @@
+Barebones projectsgit remote add origin git@github.com:vabole/shared-drafts.git
